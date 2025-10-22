@@ -26,4 +26,6 @@ project and some challenges I faced while building it.
 
 ## Project website
 
+https://karimalexa.github.io/se_project_spots/
+
 
