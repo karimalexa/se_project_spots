@@ -17,16 +17,8 @@ https://drive.google.com/file/d/1Yfyx1ZrReuJu4nie159ct6AtxyrUQ03T/view?usp=shari
 Website with cellphone view:
 
 https://drive.google.com/file/d/1IxZaB8KQ5wHNvI7oRCcqdDqU7r83qKTl/view?usp=sharing
-
   
   
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
-
-
 ## Project Pitch Video
 
 Check out [this video](https://drive.google.com/file/d/1jjY-wpCl8lLA4o09Ov2kHkuNiy4I2nDN/view?usp=sharing), where I describe my 
