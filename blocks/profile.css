@@ -58,7 +58,7 @@
   align-items: center;
   gap: 8px;
   line-height: 100%;
-  font-weight: 500;
+  font-weight: 500;x
 }
 
 .profile__edit-button:hover {
@@ -66,7 +66,7 @@
   opacity: 100%;
 }
 
-.profile__edit-button_pencel {
+.profile__pencel {
   width: 16px;
   height: 16px;
 }
@@ -92,7 +92,7 @@
   background-color: rgba(33, 33, 33, 0.8);
 }
 
-.profile__add-button_plus {
+.profile__plus {
   width: 12px;
   height: 12px;
 }
