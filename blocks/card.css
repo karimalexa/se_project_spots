@@ -18,15 +18,19 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 360px;
+  max-width: 353px;
 }
 
 .card__like-button {
   background-image: url(../images/heart.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 23px;
   height: 20px;
   border: none;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__like-button:hover {
@@ -48,6 +52,6 @@
   }
 
   .card__title {
-    max-width: 250px;
+    max-width: 235px;
   }
 }
