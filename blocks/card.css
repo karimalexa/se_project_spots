@@ -25,6 +25,7 @@
   background-image: url(../images/heart.svg);
   background-size: contain;
   background-position: center;
+  background-color: transparent;
   background-repeat: no-repeat;
   width: 23px;
   height: 20px;
@@ -37,7 +38,7 @@
   opacity: 100%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 627px) {
   .card {
     width: 288px;
   }
