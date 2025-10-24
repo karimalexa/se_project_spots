@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .card__image {
@@ -19,6 +20,8 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 353px;
+  line-height: 1.2;
+  font-weight: 500;
 }
 
 .card__like-button {
@@ -39,14 +42,6 @@
 }
 
 @media screen and (max-width: 627px) {
-  .card {
-    width: 288px;
-  }
-
-  .card__content {
-    width: 288px;
-  }
-
   .card__image {
     height: 288px;
     width: 288px;
@@ -54,5 +49,6 @@
 
   .card__title {
     max-width: 235px;
+    font-size: 16px;
   }
 }
