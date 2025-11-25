@@ -3,9 +3,9 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
-const addProfileButton = document.querySelector(".profile__add-button");
-const addProfileModal = document.querySelector("#new-post-modal");
-const addProfileCloseButton = addProfileModal.querySelector(
+const newPostButton = document.querySelector(".profile__add-button");
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostCloseButton = addProfileModal.querySelector(
   ".modal__close-button"
 );
 
@@ -17,10 +17,10 @@ editProfileCloseButton.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
 
-addProfileButton.addEventListener("click", function () {
-  addProfileModal.classList.add("modal_is-opened");
+newPostButton.addEventListener("click", function () {
+  newPostModal.classList.add("modal_is-opened");
 });
 
-addProfileCloseButton.addEventListener("click", function () {
-  addProfileModal.classList.remove("modal_is-opened");
+newPostCloseButton.addEventListener("click", function () {
+  newPostModal.classList.remove("modal_is-opened");
 });
