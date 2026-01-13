@@ -40,6 +40,7 @@
   background-image: url(../images/x-light.svg);
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__close-button:hover {
@@ -87,6 +88,7 @@
   background-color: #212121;
   border-radius: 8px;
   color: #fcf5e5;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
