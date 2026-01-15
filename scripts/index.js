@@ -32,7 +32,7 @@ function closeModal(modal) {
 editProfileButton.addEventListener("click", function () {
   editProfileInput.value = profileNameElement.textContent;
   editDescriptionInput.value = profileDescriptionElement.textContent;
-  openModalModal(editProfileModal);
+  openModal(editProfileModal);
 });
 
 editProfileCloseButton.addEventListener("click", function () {
@@ -40,11 +40,11 @@ editProfileCloseButton.addEventListener("click", function () {
 });
 
 newPostButton.addEventListener("click", function () {
-  openModalModal(editProfileModal);
+  openModal(newPostModal);
 });
 
 newPostCloseButton.addEventListener("click", function () {
-  closeModal(editProfileModal);
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSubmit(evt) {
@@ -58,7 +58,7 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   console.log(linkInputElement.value);
   console.log(captionInputElement.value);
-  closeModal(editProfileModal);
+  closeModal(newPostModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
