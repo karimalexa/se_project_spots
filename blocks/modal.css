@@ -58,7 +58,6 @@
 
 .modal__close-button:hover {
   background-image: url(../images/x-dark.svg);
-  cursor: pointer;
 }
 
 .modal__close-button_type_preview:hover {
@@ -113,6 +112,10 @@
   border: none;
 }
 
+.modal__submit-button:hover {
+  background-color: rgba (0, 0, 0, 0.5);
+}
+
 .modal__image-container {
   position: relative;
 }
@@ -129,13 +132,16 @@
 .modal__caption {
   color: #fff;
   background-color: #212121;
-  width: 214px;
-  height: 32px;
+  width: auto;
   border-radius: 8px;
   font-size: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  padding: 4px 8px;
 }
 
 @media screen and (max-width: 627px) {
@@ -167,6 +173,10 @@
   .modal__close-button_type_preview {
     top: -48px;
     right: 0;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 
   .modal__image-container {
