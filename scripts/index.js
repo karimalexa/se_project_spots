@@ -46,6 +46,8 @@ const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 const addCardForm = newPostModal.querySelector(".modal__form");
 const linkInputElement = newPostModal.querySelector("#image-input");
 const captionInputElement = newPostModal.querySelector("#caption-description");
+const cardSubmitButton = newPostModal.querySelector(".modal__submit-button");
+const config = settings;
 
 const previewModal = document.querySelector("#preview-modal");
 const previewCloseButton = previewModal.querySelector(".modal__close-button");
@@ -80,7 +82,7 @@ function getCardElement(data) {
   const cardDeleteBtnEl = cardElement.querySelector(".card__delete-button");
   cardDeleteBtnEl.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
+    //cardElement = null;
   });
 
   cardImageEl.addEventListener("click", () => {
@@ -111,6 +113,11 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 editProfileButton.addEventListener("click", function () {
   editProfileInput.value = profileNameElement.textContent;
   editDescriptionInput.value = profileDescriptionElement.textContent;
+  resetValidation(
+    editProfileModal,
+    [editProfileInput, editDescriptionInput],
+    config,
+  );
   openModal(editProfileModal);
 });
 
@@ -145,10 +152,30 @@ addCardForm.addEventListener("submit", function (evt) {
   const cardElement = getCardElement(inputValue);
   cardsList.prepend(cardElement);
   evt.target.reset();
+  disableButton(cardSubmitButton, config);
   closeModal(newPostModal);
 });
 
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
+});
+
+const overlay = document.querySelectorAll(".modal");
+
+overlay.forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
+
+const escape = document;
+
+escape.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const openModal = document.querySelector(".modal_is-opened");
+    closeModal(openModal);
+  }
 });
