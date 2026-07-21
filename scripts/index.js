@@ -127,7 +127,6 @@ editProfileCloseButton.addEventListener("click", function () {
 
 newPostButton.addEventListener("click", function () {
   openModal(newPostModal);
-  addCardForm.reset();
 });
 
 newPostCloseButton.addEventListener("click", function () {
@@ -161,9 +160,9 @@ initialCards.forEach(function (item) {
   cardsList.append(cardElement);
 });
 
-const overlay = document.querySelectorAll(".modal");
+const modalOverlays = document.querySelectorAll(".modal");
 
-overlay.forEach((modal) => {
+modalOverlays.forEach((modal) => {
   modal.addEventListener("click", (event) => {
     if (event.target.classList.contains("modal")) {
       closeModal(modal);
@@ -171,11 +170,11 @@ overlay.forEach((modal) => {
   });
 });
 
-const escape = document;
+document.addEventListener("keydown", handleEscape);
 
-escape.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    const openModal = document.querySelector(".modal_is-opened");
-    closeModal(openModal);
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    const opened = document.querySelector(".modal_is-opened");
+    if (opened) closeModal(opened);
   }
-});
+}
