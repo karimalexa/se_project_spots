@@ -21,8 +21,9 @@ https://drive.google.com/file/d/1IxZaB8KQ5wHNvI7oRCcqdDqU7r83qKTl/view?usp=shari
   
 ## Project Pitch Video
 
-Check out [this video](https://drive.google.com/file/d/1jjY-wpCl8lLA4o09Ov2kHkuNiy4I2nDN/view?usp=sharing), where I describe my 
-project and some challenges I faced while building it.
+Check out [this video](https://www.loom.com/share/efbc28b506424213b159445e138e718e), where I describe my 
+ project and some challenges I faced while building it.
+
 
 ## Project website
 
